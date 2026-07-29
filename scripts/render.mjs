@@ -124,12 +124,12 @@ const lineGap = 30;
 const lineEls = lines
   .map((l, i) => {
     const delay = (0.4 + i * 0.55).toFixed(2);
-    const color = l.t === "cmd" ? "#7ee787" : "#c9d1d9";
+    const color = l.t === "cmd" ? "#58a6ff" : "#c9d1d9";
     const y = ty;
     ty += lineGap;
     const { markup, endX } = renderLine(y, l.parts, color);
     const cursorEl = l.cursor
-      ? `<rect x="${endX}" y="${y - 14}" width="9" height="18" fill="#7ee787">
+      ? `<rect x="${endX}" y="${y - 14}" width="9" height="18" fill="#58a6ff">
           <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.4;0.9;1" dur="1s" begin="${(Number(delay) + 0.3).toFixed(2)}s" repeatCount="indefinite"/>
         </rect>`
       : "";
@@ -148,8 +148,8 @@ const svg = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http
     <stop offset="1" stop-color="#0d1117"/>
   </linearGradient>
   <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
-    <stop offset="0" stop-color="#238636"/>
-    <stop offset="1" stop-color="#7ee787"/>
+    <stop offset="0" stop-color="#1f6feb"/>
+    <stop offset="1" stop-color="#58a6ff"/>
   </linearGradient>
   <clipPath id="clip"><rect x="0" y="0" width="${W}" height="${H}" rx="14"/></clipPath>
   ${iconDefs}

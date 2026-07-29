@@ -5,8 +5,8 @@
     <stop offset="1" stop-color="#0d1117"/>
   </linearGradient>
   <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
-    <stop offset="0" stop-color="#238636"/>
-    <stop offset="1" stop-color="#7ee787"/>
+    <stop offset="0" stop-color="#1f6feb"/>
+    <stop offset="1" stop-color="#58a6ff"/>
   </linearGradient>
   <clipPath id="clip"><rect x="0" y="0" width="900" height="460" rx="14"/></clipPath>
   
@@ -47,7 +47,7 @@
 
   <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.40s" dur="0.25s" fill="freeze"/>
-      <text x="20" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#7ee787" xml:space="preserve">awprice@github ~ % whoami</text>
+      <text x="20" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#58a6ff" xml:space="preserve">awprice@github ~ % whoami</text>
       
     </g>
 <g opacity="0">
@@ -57,7 +57,7 @@
     </g>
 <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.50s" dur="0.25s" fill="freeze"/>
-      <text x="20" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#7ee787" xml:space="preserve">awprice@github ~ % cat about.txt</text>
+      <text x="20" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#58a6ff" xml:space="preserve">awprice@github ~ % cat about.txt</text>
       
     </g>
 <g opacity="0">
@@ -72,7 +72,7 @@
     </g>
 <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="3.15s" dur="0.25s" fill="freeze"/>
-      <text x="20" y="246" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#7ee787" xml:space="preserve">awprice@github ~ % gh-stats --user awprice</text>
+      <text x="20" y="246" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#58a6ff" xml:space="preserve">awprice@github ~ % gh-stats --user awprice</text>
       
     </g>
 <g opacity="0">
@@ -87,8 +87,8 @@
     </g>
 <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.25s" fill="freeze"/>
-      <text x="20" y="336" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#7ee787" xml:space="preserve">awprice@github ~ % _</text>
-      <rect x="195" y="322" width="9" height="18" fill="#7ee787">
+      <text x="20" y="336" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#58a6ff" xml:space="preserve">awprice@github ~ % _</text>
+      <rect x="195" y="322" width="9" height="18" fill="#58a6ff">
           <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.4;0.9;1" dur="1s" begin="5.10s" repeatCount="indefinite"/>
         </rect>
     </g>
