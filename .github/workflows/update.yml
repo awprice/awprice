@@ -1,0 +1,38 @@
+name: Update profile banner
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  push:
+    branches: ["design-1-terminal"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch GitHub stats
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GH_USERNAME: awprice
+        run: node scripts/fetch-stats.mjs
+
+      - name: Render banner
+        run: node scripts/render.mjs
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile.svg
+          git diff --staged --quiet || git commit -m "chore: update profile banner [skip ci]"
+          git push
