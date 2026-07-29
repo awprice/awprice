@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "17 */6 * * *"
   push:
-    branches: ["design-1-terminal"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
