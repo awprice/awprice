@@ -12,6 +12,9 @@ const esc = (s) =>
 
 const W = 900;
 const H = 460;
+const FONT = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace";
+const ICON_COLOR = "#6e7681";
+const CHAR_W = 8.75;
 
 const langs = stats.languages.slice(0, 5).map((l) => l.name).join(" · ");
 const location = stats.profile.location || "";
@@ -41,26 +44,79 @@ const bars = weeks
   })
   .join("\n");
 
-function textWidthApprox(s) {
-  return s.length * 8.75;
+// Small single-color line icons, standing in for emoji so nothing in the
+// banner competes in color with the terminal palette.
+const iconDefs = `
+  <symbol id="i-pin" viewBox="0 0 14 14">
+    <circle cx="7" cy="7" r="6" fill="none" stroke="${ICON_COLOR}" stroke-width="1.4"/>
+    <circle cx="7" cy="7" r="2.2" fill="${ICON_COLOR}"/>
+  </symbol>
+  <symbol id="i-code" viewBox="0 0 14 14">
+    <path d="M5.2 2.5L1 7l4.2 4.5 1.1-1-3.2-3.5 3.2-3.5z" fill="${ICON_COLOR}"/>
+    <path d="M8.8 2.5L13 7l-4.2 4.5-1.1-1 3.2-3.5-3.2-3.5z" fill="${ICON_COLOR}"/>
+  </symbol>
+  <symbol id="i-box" viewBox="0 0 14 14">
+    <path d="M7 0.5l6.06 3.5v7L7 13.5l-6.06-3.5v-7L7 0.5z" fill="${ICON_COLOR}"/>
+  </symbol>
+  <symbol id="i-people" viewBox="0 0 14 14">
+    <circle cx="5.2" cy="5" r="3" fill="${ICON_COLOR}"/>
+    <circle cx="9.6" cy="6.2" r="2.4" fill="${ICON_COLOR}" opacity="0.7"/>
+  </symbol>
+  <symbol id="i-trend" viewBox="0 0 14 14">
+    <rect x="0.5" y="8" width="2.6" height="5.5" fill="${ICON_COLOR}"/>
+    <rect x="5.2" y="4.5" width="2.6" height="9" fill="${ICON_COLOR}"/>
+    <rect x="9.9" y="0.5" width="2.6" height="13" fill="${ICON_COLOR}"/>
+  </symbol>
+  <symbol id="i-bolt" viewBox="0 0 14 14">
+    <path d="M7.5 0L2 8h3.3L4.3 14 11 5.8H7.6L7.5 0z" fill="${ICON_COLOR}"/>
+  </symbol>
+`;
+
+function renderLine(y, parts, color) {
+  let cx = 20;
+  let out = "";
+  for (const p of parts) {
+    if (p.icon) {
+      out += `<use href="#${p.icon}" xlink:href="#${p.icon}" x="${cx}" y="${y - 11}" width="14" height="14"/>`;
+      cx += 17;
+    } else {
+      out += `<text x="${cx}" y="${y}" font-family="${FONT}" font-size="15" fill="${color}" xml:space="preserve">${esc(p.text)}</text>`;
+      cx += p.text.length * CHAR_W;
+    }
+  }
+  return { markup: out, endX: cx };
 }
 
 const lines = [
-  { t: "cmd", text: `awprice@github ~ % whoami` },
-  { t: "out", text: `${stats.profile.name}` },
-  { t: "cmd", text: `awprice@github ~ % cat about.txt` },
-  { t: "out", text: `${bioLine}` },
-  { t: "out", text: `📍 ${location}   🧰 ${langs}` },
-  { t: "cmd", text: `awprice@github ~ % gh-stats --user awprice` },
+  { t: "cmd", parts: [{ text: `awprice@github ~ % whoami` }] },
+  { t: "out", parts: [{ text: stats.profile.name }] },
+  { t: "cmd", parts: [{ text: `awprice@github ~ % cat about.txt` }] },
+  { t: "out", parts: [{ text: bioLine }] },
   {
     t: "out",
-    text: `★ ${stats.stars} stars    👥 ${stats.profile.followers} followers    📦 ${stats.profile.publicRepos} repos`,
+    parts: [{ icon: "i-pin" }, { text: ` ${location}   ` }, { icon: "i-code" }, { text: ` ${langs}` }],
+  },
+  { t: "cmd", parts: [{ text: `awprice@github ~ % gh-stats --user awprice` }] },
+  {
+    t: "out",
+    parts: [
+      { text: `★ ${stats.stars} stars    ` },
+      { icon: "i-people" },
+      { text: ` ${stats.profile.followers} followers    ` },
+      { icon: "i-box" },
+      { text: ` ${stats.profile.publicRepos} repos` },
+    ],
   },
   {
     t: "out",
-    text: `📈 ${stats.contributions.totalLastYear} contributions this year    🔥 streak ${stats.contributions.currentStreak}d (best ${stats.contributions.longestStreak}d)`,
+    parts: [
+      { icon: "i-trend" },
+      { text: ` ${stats.contributions.totalLastYear} contributions this year    ` },
+      { icon: "i-bolt" },
+      { text: ` streak ${stats.contributions.currentStreak}d (best ${stats.contributions.longestStreak}d)` },
+    ],
   },
-  { t: "cmd", text: `awprice@github ~ % _`, cursor: true },
+  { t: "cmd", parts: [{ text: `awprice@github ~ % _` }], cursor: true },
 ];
 
 let ty = 96;
@@ -71,20 +127,21 @@ const lineEls = lines
     const color = l.t === "cmd" ? "#7ee787" : "#c9d1d9";
     const y = ty;
     ty += lineGap;
+    const { markup, endX } = renderLine(y, l.parts, color);
     const cursorEl = l.cursor
-      ? `<rect x="${20 + textWidthApprox(l.text)}" y="${y - 14}" width="9" height="18" fill="#7ee787">
+      ? `<rect x="${endX}" y="${y - 14}" width="9" height="18" fill="#7ee787">
           <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.4;0.9;1" dur="1s" begin="${(Number(delay) + 0.3).toFixed(2)}s" repeatCount="indefinite"/>
         </rect>`
       : "";
     return `<g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="${delay}s" dur="0.25s" fill="freeze"/>
-      <text x="20" y="${y}" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="${color}" xml:space="preserve">${esc(l.text)}</text>
+      ${markup}
       ${cursorEl}
     </g>`;
   })
   .join("\n");
 
-const svg = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
+const svg = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#161b22"/>
@@ -95,6 +152,7 @@ const svg = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http
     <stop offset="1" stop-color="#7ee787"/>
   </linearGradient>
   <clipPath id="clip"><rect x="0" y="0" width="${W}" height="${H}" rx="14"/></clipPath>
+  ${iconDefs}
 </defs>
 <g clip-path="url(#clip)">
   <rect width="${W}" height="${H}" fill="url(#bg)"/>

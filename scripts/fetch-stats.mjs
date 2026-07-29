@@ -67,6 +67,19 @@ async function fetchContributions() {
               }
             }
           }
+          commitContributionsByRepository(maxRepositories: 100) {
+            repository {
+              nameWithOwner
+              isFork
+              languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
+                edges {
+                  size
+                  node { name }
+                }
+              }
+            }
+            contributions { totalCount }
+          }
         }
       }
     }`;
@@ -97,16 +110,59 @@ function computeStreaks(weeks) {
   return { longest, current };
 }
 
-function aggregateLanguages(repos) {
-  const byLang = {};
-  for (const r of repos) {
-    if (!r.language || r.fork) continue;
-    byLang[r.language] = (byLang[r.language] || 0) + 1;
+// Build/config file types that Linguist tags as a "language" but that don't
+// reflect a language someone would say they "work in".
+const NON_LANGUAGES = new Set([
+  "Makefile",
+  "Dockerfile",
+  "Go Template",
+  "HCL",
+  "Jsonnet",
+  "Starlark",
+  "Yacc",
+  "HTML",
+  "CSS",
+  "SCSS",
+  "Less",
+  "YAML",
+  "JSON",
+  "TOML",
+  "INI",
+  "XSLT",
+  "Smarty",
+  "M4",
+  "Procfile",
+  "Roff",
+  "Batchfile",
+  "Diff",
+  "Text",
+  "Markdown",
+  "Nginx",
+  "Vim Script",
+  "EJS",
+  "Handlebars",
+]);
+
+// Weights languages by recent commit activity (last 12 months) rather than
+// static repo counts, so languages you've moved on from don't linger.
+function computeRecentLanguages(commitContributionsByRepository) {
+  const weighted = {};
+  for (const entry of commitContributionsByRepository) {
+    const repo = entry.repository;
+    if (!repo || repo.isFork) continue;
+    const commits = entry.contributions.totalCount;
+    const edges = (repo.languages?.edges || []).filter((e) => !NON_LANGUAGES.has(e.node.name));
+    const totalBytes = edges.reduce((sum, e) => sum + e.size, 0);
+    if (!totalBytes) continue;
+    for (const e of edges) {
+      const share = e.size / totalBytes;
+      weighted[e.node.name] = (weighted[e.node.name] || 0) + commits * share;
+    }
   }
-  return Object.entries(byLang)
+  return Object.entries(weighted)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 6)
-    .map(([name, count]) => ({ name, count }));
+    .map(([name, weight]) => ({ name, weight }));
 }
 
 async function main() {
@@ -118,7 +174,7 @@ async function main() {
 
   const ownedNonForks = repos.filter((r) => !r.fork);
   const totalStars = ownedNonForks.reduce((sum, r) => sum + (r.stargazers_count || 0), 0);
-  const languages = aggregateLanguages(ownedNonForks);
+  const languages = computeRecentLanguages(contributions.commitContributionsByRepository);
   const streaks = computeStreaks(contributions.contributionCalendar.weeks);
   const mostRecent = [...repos]
     .filter((r) => !r.fork)
