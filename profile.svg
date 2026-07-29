@@ -67,7 +67,7 @@
     </g>
 <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="2.60s" dur="0.25s" fill="freeze"/>
-      <use href="#i-pin" xlink:href="#i-pin" x="20" y="205" width="14" height="14"/><text x="37" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> Sydney, Australia   </text><use href="#i-code" xlink:href="#i-code" x="220.75" y="205" width="14" height="14"/><text x="237.75" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> Go · C · Python · Shell · Kotlin</text>
+      <use href="#i-pin" xlink:href="#i-pin" x="20" y="205" width="14" height="14"/><text x="37" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> Sydney, Australia   </text><use href="#i-code" xlink:href="#i-code" x="220.75" y="205" width="14" height="14"/><text x="237.75" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> Go · JavaScript · C · Python · Shell</text>
       
     </g>
 <g opacity="0">
