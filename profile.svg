@@ -82,7 +82,7 @@
     </g>
 <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="4.25s" dur="0.25s" fill="freeze"/>
-      <use href="#i-trend" xlink:href="#i-trend" x="20" y="295" width="14" height="14"/><text x="37" y="306" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> 304 contributions this year    </text><use href="#i-bolt" xlink:href="#i-bolt" x="317" y="295" width="14" height="14"/><text x="334" y="306" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> streak 1d (best 8d)</text>
+      <use href="#i-trend" xlink:href="#i-trend" x="20" y="295" width="14" height="14"/><text x="37" y="306" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> 302 contributions this year    </text><use href="#i-bolt" xlink:href="#i-bolt" x="317" y="295" width="14" height="14"/><text x="334" y="306" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> streak 1d (best 8d)</text>
       
     </g>
 <g opacity="0">
