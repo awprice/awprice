@@ -139,88 +139,88 @@
       <animate attributeName="y" from="400" to="398" begin="0.20s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="588" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="2" begin="0.22s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="398" begin="0.22s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="14" begin="0.22s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="386" begin="0.22s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="600" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="14" begin="0.24s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="386" begin="0.24s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="30" begin="0.24s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="370" begin="0.24s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="612" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="30" begin="0.26s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="370" begin="0.26s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="23" begin="0.26s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="377" begin="0.26s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="624" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="23" begin="0.28s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="377" begin="0.28s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="5" begin="0.28s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="395" begin="0.28s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="636" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="5" begin="0.30s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="395" begin="0.30s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="19" begin="0.30s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="381" begin="0.30s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="648" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="19" begin="0.32s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="381" begin="0.32s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="5" begin="0.32s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="395" begin="0.32s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="660" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="5" begin="0.34s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="395" begin="0.34s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="27" begin="0.34s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="373" begin="0.34s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="672" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="27" begin="0.36s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="373" begin="0.36s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="28" begin="0.36s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="372" begin="0.36s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="684" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="28" begin="0.38s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="372" begin="0.38s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="11" begin="0.38s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="389" begin="0.38s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="696" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="11" begin="0.40s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="389" begin="0.40s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="28" begin="0.40s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="372" begin="0.40s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="708" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="28" begin="0.42s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="372" begin="0.42s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="27" begin="0.42s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="373" begin="0.42s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="720" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
       <animate attributeName="height" from="0" to="27" begin="0.44s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
       <animate attributeName="y" from="400" to="373" begin="0.44s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="732" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="27" begin="0.46s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="373" begin="0.46s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="4" begin="0.46s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="396" begin="0.46s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="744" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="4" begin="0.48s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="396" begin="0.48s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="19" begin="0.48s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="381" begin="0.48s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="756" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="19" begin="0.50s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="381" begin="0.50s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="41" begin="0.50s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="359" begin="0.50s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="768" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="41" begin="0.52s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="359" begin="0.52s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="21" begin="0.52s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="379" begin="0.52s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="780" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="21" begin="0.54s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="379" begin="0.54s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="14" begin="0.54s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="386" begin="0.54s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="792" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="14" begin="0.56s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="386" begin="0.56s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="46" begin="0.56s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="354" begin="0.56s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="804" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="46" begin="0.58s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="354" begin="0.58s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="19" begin="0.58s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="381" begin="0.58s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="816" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="19" begin="0.60s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="381" begin="0.60s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="7" begin="0.60s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="393" begin="0.60s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="828" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="7" begin="0.62s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="393" begin="0.62s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="2" begin="0.62s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="398" begin="0.62s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
   <line x1="20" y1="400" x2="880" y2="400" stroke="#21262d" stroke-width="1"/>
 
