@@ -82,7 +82,7 @@
     </g>
 <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="4.25s" dur="0.25s" fill="freeze"/>
-      <use href="#i-trend" xlink:href="#i-trend" x="20" y="295" width="14" height="14"/><text x="37" y="306" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> 307 contributions this year    </text><use href="#i-bolt" xlink:href="#i-bolt" x="317" y="295" width="14" height="14"/><text x="334" y="306" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> streak 2d (best 8d)</text>
+      <use href="#i-trend" xlink:href="#i-trend" x="20" y="295" width="14" height="14"/><text x="37" y="306" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> 311 contributions this year    </text><use href="#i-bolt" xlink:href="#i-bolt" x="317" y="295" width="14" height="14"/><text x="334" y="306" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> streak 1d (best 8d)</text>
       
     </g>
 <g opacity="0">
@@ -219,8 +219,8 @@
       <animate attributeName="y" from="400" to="393" begin="0.60s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
 <rect x="828" y="400" width="8" height="0" rx="2" fill="url(#barGrad)">
-      <animate attributeName="height" from="0" to="7" begin="0.62s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
-      <animate attributeName="y" from="400" to="393" begin="0.62s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="height" from="0" to="14" begin="0.62s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+      <animate attributeName="y" from="400" to="386" begin="0.62s" dur="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
   <line x1="20" y1="400" x2="880" y2="400" stroke="#21262d" stroke-width="1"/>
 
