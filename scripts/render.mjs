@@ -19,7 +19,7 @@ const CHAR_W = 8.75;
 const langs = stats.languages.slice(0, 5).map((l) => l.name).join(" · ");
 const location = stats.profile.location || "";
 const company = (stats.profile.company || "").replace("@", "").trim();
-const bioLine = `Senior Engineer, Kubernetes @ ${company || "Atlassian"}`;
+const bioLine = `Principal Engineer, Kubernetes @ ${company || "Atlassian"}`;
 
 const weeks = stats.contributions.calendar.slice(-32).map((w) =>
   w.contributionDays.reduce((s, d) => s + d.contributionCount, 0)
