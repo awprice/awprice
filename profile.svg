@@ -77,7 +77,7 @@
     </g>
 <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.25s" fill="freeze"/>
-      <text x="20" y="276" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve">★ 38 stars    </text><use href="#i-people" xlink:href="#i-people" x="142.5" y="265" width="14" height="14"/><text x="159.5" y="276" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> 51 followers    </text><use href="#i-box" xlink:href="#i-box" x="308.25" y="265" width="14" height="14"/><text x="325.25" y="276" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> 88 repos</text>
+      <text x="20" y="276" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve">★ 38 stars    </text><use href="#i-people" xlink:href="#i-people" x="142.5" y="265" width="14" height="14"/><text x="159.5" y="276" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> 52 followers    </text><use href="#i-box" xlink:href="#i-box" x="308.25" y="265" width="14" height="14"/><text x="325.25" y="276" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#c9d1d9" xml:space="preserve"> 88 repos</text>
       
     </g>
 <g opacity="0">
@@ -224,6 +224,6 @@
     </rect>
   <line x1="20" y1="400" x2="880" y2="400" stroke="#21262d" stroke-width="1"/>
 
-  <text x="20" y="444" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#30363d">auto-updated · last sync 2026-10-15</text>
+  <text x="20" y="444" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#30363d">auto-updated · last sync 2026-10-16</text>
 </g>
 </svg>
